@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    
 
 <h2>login:</h2>
 
@@ -21,26 +22,29 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" id="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button id="submit_btn" type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>    
-  $("#submit-form").submit(function(e) {
+<script>
+ 
+    $("#submit-form").submit(function(e) {
         e.preventDefault();
         var userName = $('#user_name').val();
         var password = $('#password').val();
     
+    
+
         if(userName === 'abc'){
-            if(password === 'abc')
+            if(password=== 'abc')
             {
             window.location.replace("https://www.pragmagiclabs.com/");
         }
@@ -53,6 +57,5 @@
     }
     });
 </script>
-
 </body>
 </html>
