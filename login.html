@@ -32,6 +32,29 @@
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>    
+  $("#submit-form").submit(function(e) {
+        e.preventDefault();
+        var userName = $('#user_name').val();
+        var password = $('#password').val();
+    
+    
+
+        if(userName === 'abc'){
+            if(password=== 'abc')
+            {
+            window.location.replace("https://www.pragmagiclabs.com/");
+        }
+        else {
+            alert('please enter valid password');
+        }
+    }
+    else{
+        alert('invalid username');
+    }
+    });
+</script>
 
 </body>
 </html>
