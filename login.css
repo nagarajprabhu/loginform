@@ -52,10 +52,9 @@ img.logo {
 }
 
 .container {
-  width: 500px;
-  height: 400px;
   margin-top: 50px;
-  margin-left: 475px;
+  margin-left: 300px;
+  margin-right: 300px
     background-color: cadetblue;
  padding: 16px;
 }
